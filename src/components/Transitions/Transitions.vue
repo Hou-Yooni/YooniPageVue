@@ -1,16 +1,15 @@
 <template>
   <div
-    id="app"
-    class="bg-gradient-to-br from-purple-900 to-blue-700 min-h-screen flex items-center justify-center"
+    class="bg-gradient-to-br from-[#e1ddd7] to-{#d7b272} min-h-screen flex items-center justify-center"
   >
     <div
-      class="bg-gray-100 py-5 px-7 rounded shadow transition duration-300 ease-in-out hover:shadow-xl transform hover:scale-125 text-3xl relative"
-      style="min-height: 5rem; min-width: 400px"
+      class="bg-gray-100 py-5 px-7 rounded drop-shadow-[0_25px_25px_rgba(163,133,4,0.1)] transition duration-300 ease-in-out hover:shadow-xl transform hover:scale-125 text-3xl relative"
+      style="min-height: 4.5rem; min-width: 400px"
     >
       <transition name="slide-fade">
         <div
           :key="message.value"
-          class="absolute w-full left-0 text-center font-semibold"
+          class="absolute w-full left-0 text-2xl text-center font-semibold text-emerald-700"
           style="margin: auto"
         >
           {{ message.value }}
@@ -28,17 +27,20 @@ const MESSAGES: { value: string; interval?: number }[] = [
     value: "Hello I'm Yooni",
   },
   {
-    value: "I'm a Desinger",
-  },
-  {
     value: "I'm a Engineer",
   },
   {
-    value: "Fourth Message",
+    value: "I'm a UI/UX Desinger",
   },
   {
-    value: "Longer 5th Message",
-    interval: 5000,
+    value: "I'm a Graphic Desinger",
+  },
+  {
+    value: "Are you interested in me?",
+  },
+  {
+    value: "Let's start !",
+    interval: 6000,
   },
 ];
 
@@ -63,20 +65,9 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.body {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #efeae5;
-}
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all 0.4s ease;
+  transition: all 0.7s ease;
 }
 
 .slide-fade-enter-from {
