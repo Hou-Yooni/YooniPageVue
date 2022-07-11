@@ -3,7 +3,7 @@
     class="bg-gradient-to-br from-[#e1ddd7] to-{#d7b272} min-h-screen flex items-center justify-center"
   >
     <div
-      class="bg-gray-100 py-5 px-7 rounded drop-shadow-[0_25px_25px_rgba(163,133,4,0.1)] transition duration-300 ease-in-out hover:shadow-xl transform hover:scale-125 text-3xl relative"
+      class="bg-gray-100 py-5 px-7 rounded drop-shadow-[0_25px_25px_rgba(163,133,4,0.1)] transition duration-300 ease-in-out hover:shadow-[0_25px_25px_rgba(163,133,4,0.11)] transform hover:scale-105 text-3xl relative cursor-pointer"
       style="min-height: 4.5rem; min-width: 400px"
     >
       <transition name="slide-fade">
