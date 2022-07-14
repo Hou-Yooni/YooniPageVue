@@ -3,13 +3,12 @@
     class="bg-gradient-to-br from-[#e1ddd7] to-{#d7b272} min-h-screen flex items-center justify-center"
   >
     <div
-      class="bg-gray-100 py-5 px-7 rounded drop-shadow-[0_25px_25px_rgba(163,133,4,0.1)] transition duration-300 ease-in-out hover:shadow-[0_25px_25px_rgba(163,133,4,0.11)] transform hover:scale-105 text-3xl relative cursor-pointer"
-      style="min-height: 4.5rem; min-width: 400px"
+      class="bg-gray-100 py-5 px-7 h-20 overflow-hidden rounded drop-shadow-[0_25px_25px_rgba(163,133,4,0.1)] transition-all duration-700 ease-in-out hover:shadow-[0_25px_25px_rgba(163,133,4,0.11)] transform w-1/5 hover:rounded-[999rem] hover:h-[10rem] hover:w-[10rem] hover:transition-all hover:duration-700 text-3xl relative cursor-pointer group"
     >
       <transition name="slide-fade">
         <div
           :key="message.value"
-          class="absolute w-full left-0 text-2xl text-center font-semibold text-emerald-700"
+          class="absolute w-full pt-1 left-0 text-2xl text-center font-semibold text-emerald-700 duration-75 group-hover:opacity-0 hover:transition-all hover:duration-75"
           style="margin: auto"
         >
           {{ message.value }}
