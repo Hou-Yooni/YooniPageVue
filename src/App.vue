@@ -7,5 +7,3 @@ import Home from "./view/Home.vue";
     <Home />
   </main>
 </template>
-
-<style lang="scss" scoped></style>
